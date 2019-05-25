@@ -4,5 +4,6 @@ using UnityEngine;
 
 public class ControllerScirpt : MonoBehaviour
 {
-
+    public bool crowdMaddnes;
+    public float stageSpeed;
 }

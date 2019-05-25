@@ -31,6 +31,9 @@ public class PlayerScript : MonoBehaviour
     private Vector2 moveVector;
     private Vector3 moveHolder;
     private Vector2 vLeft, vRight, vUp, vDown;
+    private GameObject controller;
+
+
 
 
     private void MoveScript()
@@ -89,7 +92,9 @@ public class PlayerScript : MonoBehaviour
             DeathTrigger();
         }
     }
-    private void DeathTrigger()
+   
+
+    public void DeathTrigger()
     {
         Debug.Log("umro si");
         Debug.Break();
@@ -100,11 +105,17 @@ public class PlayerScript : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         currEnergy = Energy;
+        controller = GameObject.Find("controller");
     }
 
     // Update is called once per frame
     void Update()
     {
         MoveScript();
+
     }
+
+
+
+
 }

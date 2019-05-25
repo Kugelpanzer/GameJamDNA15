@@ -232,7 +232,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd6fe8a4cd00205468b3a9c68cf148bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crowdHappiness: 0
   Rock: {fileID: 0}
   Food: {fileID: 0}
   SpawnPoint:
@@ -276,7 +275,7 @@ GameObject:
   - component: {fileID: 771920556}
   - component: {fileID: 771920555}
   m_Layer: 0
-  m_Name: Lion
+  m_Name: LionObj
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -632,7 +631,7 @@ GameObject:
   - component: {fileID: 1515258476}
   - component: {fileID: 1515258477}
   m_Layer: 0
-  m_Name: Player
+  m_Name: PlayerObj
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -652,6 +651,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 1
   backSpeed: 0.1
+  crowdHappiness: 0
+  crowdRiotPoint: 0
   Energy: 1000
   SprintCost: 0
   MoveCost: 0
@@ -713,7 +714,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1515258472}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.38, y: -2.9, z: -1.3378906}
+  m_LocalPosition: {x: -2.68, y: -2.4, z: -1.3378906}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
