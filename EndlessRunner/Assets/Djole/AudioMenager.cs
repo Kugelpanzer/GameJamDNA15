@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using System;
-
+using Random = UnityEngine.Random;
 public class AudioMenager : MonoBehaviour
 {
     public Sound[] sounds;
-
+    private int rand;
     // Start is called before the first frame update
     void Awake()
     {
+        rand = Random.Range(200, 600);
         foreach(Sound s in sounds)
         {
             s.source = gameObject.AddComponent<AudioSource>();
@@ -19,6 +20,8 @@ public class AudioMenager : MonoBehaviour
             s.source.pitch = 1f;
             s.source.loop = s.loop;
         }
+        PlaySound("theme");
+        
     }
 
 
@@ -30,6 +33,14 @@ public class AudioMenager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (rand <= 0)
+        {
+            PlaySound("crowd");
+            rand = Random.Range(200, 600);
+        }
+        else
+        {
+            rand--;
+        }
     }
 }

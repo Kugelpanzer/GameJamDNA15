@@ -108,7 +108,7 @@ public class PlayerScript : MonoBehaviour
                 Anim.SetBool("Death", true);
                 break;
             case 2:
-                Anim.SetBool("Death", true);
+                Anim.SetBool("Death2", true);
                 break;
         }
         

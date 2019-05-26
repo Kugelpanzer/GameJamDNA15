@@ -14,7 +14,7 @@ public class FoodGenerator : MonoBehaviour
     public float currHappiness;
 
     [Tooltip("less or equal Curr Happiness")]
-    public float crowdRiotPoint;
+    public float crowdRiotPoint=50;
 
     public GameObject Rock;
     public GameObject Food;
@@ -107,7 +107,7 @@ public class FoodGenerator : MonoBehaviour
     public void ThrowRock()
     {
         int rand = Random.Range(0, 100);
-        if (rand <= rockChance + (int)(currDist / 2))
+        if (rand <= rockChance + (int)(currDist / 1.5))
         {
             Spawn(Rock);
         }
