@@ -17,5 +17,6 @@ public class FoodScript : MonoBehaviour
     void Update()
     {
         transform.Translate(-Vector2.right * moveSpeed * Time.deltaTime);
+       // transform.position += -Vector3.right * moveSpeed * Time.deltaTime;
     }
 }

@@ -33,7 +33,7 @@ public class PlayerScript : MonoBehaviour
     private Vector2 vLeft, vRight, vUp, vDown;
     private GameObject controller;
 
-
+    public int FoodRestoration;
 
 
     private void MoveScript()
@@ -89,12 +89,12 @@ public class PlayerScript : MonoBehaviour
         currEnergy -= val;
         if(currEnergy <= 0)
         {
-            DeathTrigger();
+            DeathTrigger(2);
         }
     }
    
 
-    public void DeathTrigger()
+    public void DeathTrigger(int cause)
     {
         Debug.Log("umro si");
         Debug.Break();
@@ -112,9 +112,23 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         MoveScript();
+        StunActive();
 
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Food")
+        {
+            currEnergy += FoodRestoration;
 
+        }
+        else if(collision.gameObject.tag == "Rock")
+        {
+            currStun = stunDuration;
+            Debug.Log("nesto");
+        }
+
+    }
 
 
 
