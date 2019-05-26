@@ -4312,7 +4312,7 @@ MonoBehaviour:
   senka: {fileID: 1524807094}
   Energy: 100
   currEnergy: 0
-  SprintCost: 13
+  SprintCost: 12
   MoveCost: 4
   stunStrength: 1.8
   stunDuration: 30
