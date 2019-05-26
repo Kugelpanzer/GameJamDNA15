@@ -25,7 +25,7 @@ public class ControllerScirpt : MonoBehaviour
     {
         if (!player.GetComponent<PlayerScript>().dead)
         {
-            stageSpeed = 0;
+            
             if (currTick <= 0)
             {
                 currVal = (int)GetComponent<FoodGenerator>().currHappiness;
@@ -36,6 +36,10 @@ public class ControllerScirpt : MonoBehaviour
             {
                 currTick--;
             }
+        }
+        else
+        {
+            stageSpeed = 0;
         }
 
     }
