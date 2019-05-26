@@ -34,7 +34,7 @@ public class PlayerScript : MonoBehaviour
     private GameObject controller;
 
     public int FoodRestoration;
-
+    public Sprite DeathAnim;
 
     private void MoveScript()
     {
@@ -55,8 +55,11 @@ public class PlayerScript : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.D))
         {
-            vLeft = Vector2.right;
-            EnergySpend(SprintCost / 60);
+            if (currStun <= 0)
+            {
+                vLeft = Vector2.right;
+                EnergySpend(SprintCost / 60);
+            }
         }
         if (Input.GetKey(KeyCode.S))
         {

@@ -95,7 +95,7 @@ public class FoodGenerator : MonoBehaviour
 
         TakenPoints.Clear();
         PointInitialize();
-        Lion = GameObject.Find("LionObj");
+        Lion = GameObject.Find("LionObjPoint");
         Player = GameObject.Find("PlayerObj");
         EndOfCrowd = GameObject.Find("EndCrowdObj");
         CalcCrowd();

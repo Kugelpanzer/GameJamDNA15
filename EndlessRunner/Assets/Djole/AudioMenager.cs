@@ -17,6 +17,7 @@ public class AudioMenager : MonoBehaviour
             s.source.clip = s.clip;
             s.source.volume = s.volume;
             s.source.pitch = 1f;
+            s.source.loop = s.loop;
         }
     }
 
