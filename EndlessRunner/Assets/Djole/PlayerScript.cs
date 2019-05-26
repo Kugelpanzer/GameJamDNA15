@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour
 {
 
+    public bool dead;
+
     public float moveSpeed;
     public float backSpeed;
 
@@ -34,7 +36,7 @@ public class PlayerScript : MonoBehaviour
     private GameObject controller;
 
     public int FoodRestoration;
-    public Sprite DeathAnim;
+    private Animator Anim;
 
     private void MoveScript()
     {
@@ -99,8 +101,18 @@ public class PlayerScript : MonoBehaviour
 
     public void DeathTrigger(int cause)
     {
-        Debug.Log("umro si");
-        GetComponent<SpriteRenderer>().sprite = DeathAnim;
+        dead = true;
+        switch (cause)
+        {
+            case 1:
+                Anim.SetBool("Death", true);
+                break;
+            case 2:
+                Anim.SetBool("Death", true);
+                break;
+        }
+        
+        //GetComponent<SpriteRenderer>().sprite = DeathAnim;
        // Debug.Break();
     }
 
@@ -110,13 +122,17 @@ public class PlayerScript : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         currEnergy = Energy;
         controller = GameObject.Find("controller");
+        Anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        MoveScript();
-        StunActive();
+        if (!dead)
+        {
+            MoveScript();
+            StunActive();
+        }
 
     }
     private void OnTriggerEnter2D(Collider2D collision)

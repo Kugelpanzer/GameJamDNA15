@@ -7,7 +7,7 @@ public class ControllerScirpt : MonoBehaviour
     public int ScorePoints;
     public bool crowdMaddnes;
     public float stageSpeed;
-
+    public GameObject player;
     [Tooltip("in seconds")]
     public int scoreTick;
     private int currTick;
@@ -22,6 +22,10 @@ public class ControllerScirpt : MonoBehaviour
     }
     private void Update()
     {
+        if (player.GetComponent<PlayerScript>().dead)
+        {
+            stageSpeed = 0;
+        }
         if (currTick <= 0)
         {
             currVal =(int) GetComponent<FoodGenerator>().currHappiness;
