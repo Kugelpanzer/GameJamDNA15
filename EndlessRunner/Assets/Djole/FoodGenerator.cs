@@ -32,6 +32,7 @@ public class FoodGenerator : MonoBehaviour
     private float dist, fullDist;
     private float currDist;
 
+
     private void ResetPoints()
     {
         for (int i = 0; i < TakenPoints.Count; i++)
@@ -68,11 +69,14 @@ public class FoodGenerator : MonoBehaviour
 
         if (currHappiness <= 0)
         {
-            Player.GetComponent<PlayerScript>().DeathTrigger(0);
+            Player.GetComponent<PlayerScript>().DeathTrigger(2);
         }
         else if (currHappiness >= 100)
         {
             Player.GetComponent<PlayerScript>().DeathTrigger(1);
+
+            // lav animacija
+            Lion.transform.parent.gameObject.GetComponent<LionScript>().anim.SetBool("Eat", true);
         }
         if (currHappiness <= crowdRiotPoint)
         {
@@ -90,7 +94,7 @@ public class FoodGenerator : MonoBehaviour
     }
     #endregion
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
 
         TakenPoints.Clear();
@@ -119,27 +123,30 @@ public class FoodGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CalcCrowd();
-        CheckCrowd();
-        if (currTimer > 0)
+        if (!Player.GetComponent<PlayerScript>().dead)
         {
-            currTimer--;
-        }
-        else
-        {
-            currTimer = spawnTimer;
-            ResetPoints();
-        }
+            CalcCrowd();
+            CheckCrowd();
+            if (currTimer > 0)
+            {
+                currTimer--;
+            }
+            else
+            {
+                currTimer = spawnTimer;
+                ResetPoints();
+            }
 
-        if (currTry <= 0)
-        {
-            ThrowRock();
-            ThrowFood();
-            currTry = spawnTry;
-        }
-        else
-        {
-            currTry--;
+            if (currTry <= 0)
+            {
+                ThrowRock();
+                ThrowFood();
+                currTry = spawnTry;
+            }
+            else
+            {
+                currTry--;
+            }
         }
 
 

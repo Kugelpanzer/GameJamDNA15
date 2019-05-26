@@ -1474,6 +1474,7 @@ MonoBehaviour:
   ScorePoints: 0
   crowdMaddnes: 0
   stageSpeed: 2
+  player: {fileID: 1515258472}
   scoreTick: 3
   first: {fileID: 303753732}
 --- !u!114 &693843846
@@ -1614,8 +1615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48291d3f8183fab4a8fb29f7963b65b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  running: {fileID: 0}
-  eating: {fileID: 0}
+  anim: {fileID: 0}
   target: {fileID: 1515258472}
 --- !u!212 &771920558
 SpriteRenderer:
@@ -1653,7 +1653,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 5441654428335130353, guid: 4136a10f6acc7ea47be04f7a908732a6,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3021,6 +3021,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 773f0efa928165f4b91ee7c903a0c662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dead: 0
   moveSpeed: 1
   backSpeed: 0.1
   Energy: 100
@@ -3030,8 +3031,6 @@ MonoBehaviour:
   stunStrength: 1.8
   stunDuration: 30
   FoodRestoration: 10
-  DeathAnim: {fileID: 9062165671117540965, guid: d6e47385267a9fa46b50ad6519b766c5,
-    type: 3}
 --- !u!212 &1515258474
 SpriteRenderer:
   m_ObjectHideFlags: 0

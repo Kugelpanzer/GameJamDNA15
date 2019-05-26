@@ -19,14 +19,19 @@ public class TileScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        moveSpeed = controller.GetComponent<ControllerScirpt>().stageSpeed;
         transform.Translate(-Vector2.right * moveSpeed * Time.deltaTime);
 
     }
     private void OnBecameInvisible()
     {
-        ControllerScirpt cs = controller.GetComponent<ControllerScirpt>();
-        transform.position = cs.first.position;
-        cs.first = snap;
-        Debug.Log("caocao");
+        if (controller != null)
+        {
+            ControllerScirpt cs = controller.GetComponent<ControllerScirpt>();
+            if (cs.first != null)
+                transform.position = cs.first.position;
+            cs.first = snap;
+        }
+
     }
 }

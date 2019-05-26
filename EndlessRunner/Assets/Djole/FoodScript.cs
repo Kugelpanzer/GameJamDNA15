@@ -16,6 +16,7 @@ public class FoodScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        moveSpeed = controller.GetComponent<ControllerScirpt>().stageSpeed;
         transform.Translate(-Vector2.right * moveSpeed * Time.deltaTime);
        // transform.position += -Vector3.right * moveSpeed * Time.deltaTime;
     }
