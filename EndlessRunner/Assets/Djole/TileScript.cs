@@ -21,7 +21,16 @@ public class TileScript : MonoBehaviour
     {
         moveSpeed = controller.GetComponent<ControllerScirpt>().stageSpeed;
         transform.Translate(-Vector2.right * moveSpeed * Time.deltaTime);
+        if (controller.GetComponent<ControllerScirpt>().crowdMaddnes)
+        {
+            transform.GetChild(1).gameObject.GetComponent<Animator>().SetBool("Besna", true);
 
+
+        }
+        else
+        {
+            transform.GetChild(1).gameObject.GetComponent<Animator>().SetBool("Besna", false);
+        }
     }
     private void OnBecameInvisible()
     {
