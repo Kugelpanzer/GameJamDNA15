@@ -42,6 +42,6 @@ public class GUIController : MonoBehaviour
     }
     public void RestartGame()
     {
-        SceneManager.LoadScene("DjScene2");
+        SceneManager.LoadScene("DjScene3");
     }
 }

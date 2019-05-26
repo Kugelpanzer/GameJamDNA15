@@ -26,16 +26,17 @@ public class ControllerScirpt : MonoBehaviour
         if (player.GetComponent<PlayerScript>().dead)
         {
             stageSpeed = 0;
+            if (currTick <= 0)
+            {
+                currVal = (int)GetComponent<FoodGenerator>().currHappiness;
+                ScorePoints += currVal / 10;
+                currTick = scoreTick;
+            }
+            else
+            {
+                currTick--;
+            }
         }
-        if (currTick <= 0)
-        {
-            currVal =(int) GetComponent<FoodGenerator>().currHappiness;
-            ScorePoints += currVal / 10;
-            currTick = scoreTick;
-        }
-        else
-        {
-            currTick--;
-        }
+
     }
 }

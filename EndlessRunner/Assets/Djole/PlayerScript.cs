@@ -11,7 +11,6 @@ public class PlayerScript : MonoBehaviour
     public float backSpeed;
 
 
-
     //Energy-----------------------------
     public float Energy;
     public float currEnergy;
@@ -61,8 +60,10 @@ public class PlayerScript : MonoBehaviour
             {
                 vLeft = Vector2.right;
                 EnergySpend(SprintCost / 60);
+
             }
         }
+        
         if (Input.GetKey(KeyCode.S))
         {
             EnergySpend(MoveCost / 60);
