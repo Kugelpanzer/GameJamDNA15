@@ -13,6 +13,9 @@ public class ControllerScirpt : MonoBehaviour
     private int currTick;
     int currVal;
 
+
+    public Transform first;
+
     private void Start()
     {
         scoreTick *= 60;

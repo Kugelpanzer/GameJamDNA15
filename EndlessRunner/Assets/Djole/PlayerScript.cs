@@ -120,12 +120,13 @@ public class PlayerScript : MonoBehaviour
         if (collision.gameObject.tag == "Food")
         {
             currEnergy += FoodRestoration;
+            Destroy(collision.gameObject);
 
         }
         else if(collision.gameObject.tag == "Rock")
         {
             currStun = stunDuration;
-            Debug.Log("nesto");
+            Destroy(collision.gameObject);
         }
 
     }

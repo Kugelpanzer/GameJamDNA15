@@ -394,7 +394,6 @@ MonoBehaviour:
   - {fileID: 1665285731}
   - {fileID: 778127908}
   - {fileID: 1227059088}
-  TakenPoints: 00000000
   spawnTimer: 0
 --- !u!4 &693843844
 Transform:

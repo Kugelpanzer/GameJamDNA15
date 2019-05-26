@@ -20,7 +20,7 @@ public class FoodGenerator : MonoBehaviour
     public GameObject Food;
 
     public List<Transform> SpawnPoint = new List<Transform>();
-    public List<bool> TakenPoints = new List<bool>();
+    private List<bool> TakenPoints = new List<bool>();
 
     public int spawnTimer;
     private int currTimer;

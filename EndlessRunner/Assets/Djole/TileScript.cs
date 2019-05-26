@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FoodScript : MonoBehaviour
+public class TileScript : MonoBehaviour
 {
     GameObject controller;
     private float moveSpeed;
+
+    public Transform snap;
     // Start is called before the first frame update
     void Start()
     {
+        snap = transform.GetChild(0);
         controller = GameObject.Find("Controller");
         moveSpeed = controller.GetComponent<ControllerScirpt>().stageSpeed;
     }
@@ -17,11 +20,12 @@ public class FoodScript : MonoBehaviour
     void Update()
     {
         transform.Translate(-Vector2.right * moveSpeed * Time.deltaTime);
-       // transform.position += -Vector3.right * moveSpeed * Time.deltaTime;
+
     }
     private void OnBecameInvisible()
     {
-        Destroy(gameObject);
+        ControllerScirpt cs = controller.GetComponent<ControllerScirpt>();
+        transform.position = cs.first.position;
+        cs.first = snap;
     }
- 
 }

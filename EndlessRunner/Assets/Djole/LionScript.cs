@@ -8,7 +8,18 @@ public class LionScript : MonoBehaviour
     public Sprite running, eating;
     public GameObject target;
 
-
+    public void ChangeSprite(string s)
+    {
+        switch (s)
+        {
+            case "eat":
+                GetComponent<SpriteRenderer>().sprite = eating;
+                break;
+            case "run":
+                GetComponent<SpriteRenderer>().sprite = running;
+                break;
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
