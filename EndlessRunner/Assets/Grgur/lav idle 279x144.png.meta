@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d0be5b0df978c1346bec260f5524dc06
+guid: 4136a10f6acc7ea47be04f7a908732a6
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -116,7 +116,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58039e76621f77843bfeac68595989fa
+      spriteID: d9dbc48a16b69984eb9d206262aade97
       internalID: 5441654428335130353
       vertices: []
       indices: 
@@ -137,7 +137,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d863b570529137e4898796b53d6cfdce
+      spriteID: 04a0496ce6dad6040beefba8ad5590ae
       internalID: 2800861704799352873
       vertices: []
       indices: 
@@ -158,7 +158,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 294f7e19ac35ee047bfab42c76151f49
+      spriteID: da3ce4a5e9c64984c9dab9d51a0b4592
       internalID: 5442186082392871967
       vertices: []
       indices: 
@@ -179,7 +179,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5aaad26f7e211974bac33fd256151c64
+      spriteID: 2a4382e254228924290befd0a6d0a738
       internalID: -1612370791548458521
       vertices: []
       indices: 
@@ -200,7 +200,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02883e323b5576a479d38e6517968ee8
+      spriteID: d778b6a8569408046952dee83c754860
       internalID: -3128464708363988398
       vertices: []
       indices: 
@@ -221,7 +221,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 242195f57c9ea524eb2fbf1df3e2035c
+      spriteID: 7cde3e23748c54444ab8959f8655d4f1
       internalID: 4251326518618790345
       vertices: []
       indices: 
@@ -230,7 +230,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 0d240f341e4eca04abdc0fe0f4fd5bd2
+    spriteID: d2905148704bcb640b08fa081f75a096
     internalID: 0
     vertices: []
     indices: 

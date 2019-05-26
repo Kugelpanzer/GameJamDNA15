@@ -1,37 +1,37 @@
 fileFormatVersion: 2
-guid: 3f2324da9f1ae5742af458f3ca5821a9
+guid: 50dbfa0cc5f63b8448f71bc81d721eb6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8473372603682388401
-    second: floor1-wall 4 imperator 1024x576_0
+      213: -1510315083612710406
+    second: iperator 1024x256_0
   - first:
-      213: -6856758261203583584
-    second: floor1-wall 4 imperator 1024x576_1
+      213: -6586501565063907779
+    second: iperator 1024x256_1
   - first:
-      213: -111658131072553295
-    second: floor1-wall 4 imperator 1024x576_2
+      213: -4729507152590556452
+    second: iperator 1024x256_2
   - first:
-      213: 1801621608589434894
-    second: floor1-wall 4 imperator 1024x576_3
+      213: 1703398049481472469
+    second: iperator 1024x256_3
   - first:
-      213: -3209380880610410155
-    second: floor1-wall 4 imperator 1024x576_4
+      213: -3676190743904730779
+    second: iperator 1024x256_4
   - first:
-      213: -5868076794466065574
-    second: floor1-wall 4 imperator 1024x576_5
+      213: -9143247503398388728
+    second: iperator 1024x256_5
   - first:
-      213: -222772293896329793
-    second: floor1-wall 4 imperator 1024x576_6
+      213: -9040549897207330934
+    second: iperator 1024x256_6
   - first:
-      213: 5793326467750358722
-    second: floor1-wall 4 imperator 1024x576_7
+      213: -6401703378185481126
+    second: iperator 1024x256_7
   - first:
-      213: 8606712500285773427
-    second: floor1-wall 4 imperator 1024x576_8
+      213: 5615248566070164158
+    second: iperator 1024x256_8
   - first:
-      213: 8095981482386745422
-    second: floor1-wall 4 imperator 1024x576_9
+      213: 3636748682549662911
+    second: iperator 1024x256_9
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -114,13 +114,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: floor1-wall 4 imperator 1024x576_0
+      name: iperator 1024x256_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 2304
+        y: 1024
         width: 1024
-        height: 576
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,20 +128,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10b941897f7a0cb4784443bb0d1d5253
-      internalID: -8473372603682388401
+      spriteID: f57239b72e0d97649b3df8ab95db0eb1
+      internalID: -1510315083612710406
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor1-wall 4 imperator 1024x576_1
+      name: iperator 1024x256_1
       rect:
         serializedVersion: 2
         x: 1024
-        y: 2304
+        y: 1024
         width: 1024
-        height: 576
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6338f5e1c408ebb40a4c7ce2dda4cb3c
-      internalID: -6856758261203583584
+      spriteID: b228f1c09179d0741876e4e204259137
+      internalID: -6586501565063907779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor1-wall 4 imperator 1024x576_2
+      name: iperator 1024x256_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 1728
+        y: 768
         width: 1024
-        height: 576
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,20 +170,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a65100527af39142a1ee0b02ec4b890
-      internalID: -111658131072553295
+      spriteID: 58edb66f909a4a546866806bbde7194c
+      internalID: -4729507152590556452
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor1-wall 4 imperator 1024x576_3
+      name: iperator 1024x256_3
       rect:
         serializedVersion: 2
         x: 1024
-        y: 1728
+        y: 768
         width: 1024
-        height: 576
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,20 +191,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d48a47d169626f46812229fc248f351
-      internalID: 1801621608589434894
+      spriteID: 6c03f5a113f2d964dbfab6332f504e1e
+      internalID: 1703398049481472469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor1-wall 4 imperator 1024x576_4
+      name: iperator 1024x256_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 1152
+        y: 512
         width: 1024
-        height: 576
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,20 +212,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd58cdfc7deae1e48bed77c146c75425
-      internalID: -3209380880610410155
+      spriteID: a2c52ca00f71eb342999bb783a2e713c
+      internalID: -3676190743904730779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor1-wall 4 imperator 1024x576_5
+      name: iperator 1024x256_5
       rect:
         serializedVersion: 2
         x: 1024
-        y: 1152
+        y: 512
         width: 1024
-        height: 576
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -233,20 +233,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9b81a4bbdfe17f46b5010b48ace57c2
-      internalID: -5868076794466065574
+      spriteID: f1c1abe5859ee5a409f1c520309d116e
+      internalID: -9143247503398388728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor1-wall 4 imperator 1024x576_6
+      name: iperator 1024x256_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 576
+        y: 256
         width: 1024
-        height: 576
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,20 +254,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2b40fa3b30874b459a5550c870d225b
-      internalID: -222772293896329793
+      spriteID: 9e66697ee5f0e2947998ebfca0c320dc
+      internalID: -9040549897207330934
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor1-wall 4 imperator 1024x576_7
+      name: iperator 1024x256_7
       rect:
         serializedVersion: 2
         x: 1024
-        y: 576
+        y: 256
         width: 1024
-        height: 576
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -275,20 +275,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8fc7e7dccd37b448b9189db5251dff8
-      internalID: 5793326467750358722
+      spriteID: 4d8d6b993d63b614aae922f6751eaa44
+      internalID: -6401703378185481126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor1-wall 4 imperator 1024x576_8
+      name: iperator 1024x256_8
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 1024
-        height: 576
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,20 +296,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2f140c825e2ff1488007282e69cea94
-      internalID: 8606712500285773427
+      spriteID: 544db0752801aed4584c09681af7fded
+      internalID: 5615248566070164158
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor1-wall 4 imperator 1024x576_9
+      name: iperator 1024x256_9
       rect:
         serializedVersion: 2
         x: 1024
         y: 0
         width: 1024
-        height: 576
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -317,8 +317,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df79cf0858b4e0e458f30bc1af77dfc0
-      internalID: 8095981482386745422
+      spriteID: 477e1158922134844b1aa73a90451be0
+      internalID: 3636748682549662911
       vertices: []
       indices: 
       edges: []
@@ -326,7 +326,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b331200794fdce548b6ee487007f5cb3
+    spriteID: 25150a641ce165d45bb9d3305c01b137
     internalID: 0
     vertices: []
     indices: 
