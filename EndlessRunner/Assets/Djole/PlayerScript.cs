@@ -107,9 +107,11 @@ public class PlayerScript : MonoBehaviour
         {
             case 1:
                 Anim.SetBool("Death", true);
+                controller.GetComponent<AudioMenager>().PlaySound("lav");
                 break;
             case 2:
                 Anim.SetBool("Death2", true);
+                
                 break;
         }
         
@@ -122,7 +124,7 @@ public class PlayerScript : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         currEnergy = Energy;
-        controller = GameObject.Find("controller");
+        controller = GameObject.Find("Controller");
         Anim = GetComponent<Animator>();
     }
 
@@ -142,12 +144,15 @@ public class PlayerScript : MonoBehaviour
         {
             currEnergy += FoodRestoration;
             Destroy(collision.gameObject);
+            controller.GetComponent<AudioMenager>().PlaySound("jabuka");
 
         }
         else if(collision.gameObject.tag == "Rock")
         {
             currStun = stunDuration;
             Destroy(collision.gameObject);
+
+            controller.GetComponent<AudioMenager>().PlaySound("kamen");
         }
 
     }
