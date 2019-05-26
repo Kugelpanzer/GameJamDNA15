@@ -23,7 +23,7 @@ public class ControllerScirpt : MonoBehaviour
     }
     private void Update()
     {
-        if (player.GetComponent<PlayerScript>().dead)
+        if (!player.GetComponent<PlayerScript>().dead)
         {
             stageSpeed = 0;
             if (currTick <= 0)

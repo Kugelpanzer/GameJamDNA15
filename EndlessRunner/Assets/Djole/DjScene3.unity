@@ -4242,8 +4242,8 @@ MonoBehaviour:
   backSpeed: 0.1
   Energy: 100
   currEnergy: 0
-  SprintCost: 10
-  MoveCost: 3
+  SprintCost: 13
+  MoveCost: 4
   stunStrength: 1.8
   stunDuration: 30
   FoodRestoration: 10
