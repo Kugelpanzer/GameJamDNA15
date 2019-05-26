@@ -4309,6 +4309,7 @@ MonoBehaviour:
   dead: 0
   moveSpeed: 1
   backSpeed: 0.1
+  senka: {fileID: 1524807094}
   Energy: 100
   currEnergy: 0
   SprintCost: 13

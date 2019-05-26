@@ -10,7 +10,7 @@ public class PlayerScript : MonoBehaviour
     public float moveSpeed;
     public float backSpeed;
 
-
+    public GameObject senka;
     //Energy-----------------------------
     public float Energy;
     public float currEnergy;
@@ -136,13 +136,17 @@ public class PlayerScript : MonoBehaviour
             MoveScript();
             StunActive();
         }
+        else
+        {
+            senka.SetActive(false);
+        }
 
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Food")
         {
-            currEnergy += FoodRestoration;
+            currEnergy = Mathf.Clamp(currEnergy + FoodRestoration, 0, 100);
             Destroy(collision.gameObject);
             controller.GetComponent<AudioMenager>().PlaySound("jabuka");
 
