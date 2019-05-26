@@ -19,6 +19,7 @@ public class ControllerScirpt : MonoBehaviour
     private void Start()
     {
         scoreTick *= 60;
+        currTick = scoreTick;
     }
     private void Update()
     {
