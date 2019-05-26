@@ -27,5 +27,6 @@ public class TileScript : MonoBehaviour
         ControllerScirpt cs = controller.GetComponent<ControllerScirpt>();
         transform.position = cs.first.position;
         cs.first = snap;
+        Debug.Log("caocao");
     }
 }

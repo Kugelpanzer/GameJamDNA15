@@ -12,7 +12,7 @@ public class PlayerScript : MonoBehaviour
 
     //Energy-----------------------------
     public float Energy;
-    float currEnergy;
+    public float currEnergy;
 
     //MOVE ---------------------------------
     public float SprintCost;
@@ -100,7 +100,8 @@ public class PlayerScript : MonoBehaviour
     public void DeathTrigger(int cause)
     {
         Debug.Log("umro si");
-        Debug.Break();
+        GetComponent<SpriteRenderer>().sprite = DeathAnim;
+       // Debug.Break();
     }
 
     // Start is called before the first frame update
